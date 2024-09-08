@@ -1,0 +1,44 @@
+[
+    {
+        "id": 101,
+        "companyName": "Tech Innovators Ltd.",
+        "jobTitle": "Front-End Web Developer",
+        "jobDescription": "We are looking for a skilled front-end developer with experience in HTML, CSS, JavaScript, and modern front-end frameworks. The candidate will work closely with the design and backend teams to create efficient, responsive, and user-friendly web applications.",
+        "salary": "$3,000 - $4,500 per month",
+        "address": {
+          "street": "123 Innovation Road",
+          "city": "Dhaka",
+          "state": "Dhaka",
+          "zipCode": "1207",
+          "country": "Bangladesh"
+        }
+      },
+      {
+        "id": 102,
+        "companyName": "Global Software Solutions",
+        "jobTitle": "Back-End Developer",
+        "jobDescription": "Seeking an experienced back-end developer proficient in Node.js, Express, and database management. The candidate will be responsible for server-side logic, API integration, and database architecture.",
+        "salary": "$4,000 - $5,500 per month",
+        "address": {
+          "street": "45 Tech Park Avenue",
+          "city": "Berlin",
+          "state": "Berlin",
+          "zipCode": "10115",
+          "country": "Germany"
+        }
+      },
+      {
+        "id": 103,
+        "companyName": "Creative Solutions Inc.",
+        "jobTitle": "UI/UX Designer",
+        "jobDescription": "We are in search of a creative UI/UX designer with a strong portfolio of user-centered design for web and mobile platforms. The role includes designing prototypes, wireframes, and interactive user experiences.",
+        "salary": "$2,800 - $4,200 per month",
+        "address": {
+          "street": "789 Design Street",
+          "city": "New York",
+          "state": "NY",
+          "zipCode": "10001",
+          "country": "USA"
+        }
+    }
+]

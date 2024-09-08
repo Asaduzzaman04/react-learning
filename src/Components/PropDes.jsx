@@ -6,8 +6,7 @@ const PropDes = ({ fullDetails }) => {
   } = fullDetails;
   return (
     <>
-      <div className="w-[35%] border flex flex-col justify-center items-center gap-5 px-5 py-3 bg-black shadow-[0px_3px_2px] hover:-translate-y-2 transition-all duration-300  rounded-md">
-    
+      <div className="w-[70%] md:w-[40%] lg:w-[30%] xl:w-[20%] border flex flex-col justify-center items-center gap-5 px-5 py-3 bg-black shadow-[0px_3px_2px] hover:-translate-y-2 transition-all duration-300  rounded-md">
         <p className="text-2xl font-bold uppercase">{name}</p>
         <p className="text-xl font-bold uppercase">{id}</p>
         <p className="text-xl font-bold uppercase">{Desicnation}</p>
@@ -17,3 +16,4 @@ const PropDes = ({ fullDetails }) => {
 };
 
 export default PropDes;
+ 
