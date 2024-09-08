@@ -1,14 +1,16 @@
-function App() {
+import ClassOne from "./Components/ClassOne";
+import React, { Component } from 'react';
+
+class App extends Component {
+  rander() {
   return (
     <>
-      <h1 className="heading text-3xl font-bold uppercase flex justify-center items-center">
-        <span className="text">
-          {" "}
-          hello the time is == {new Date().toLocaleDateString()}{" "}
-        </span>
-      </h1>
+      <div className="bg-gray-900 text-yellow-100 h-[100vh] flex justify-center items-center">
+      <ClassOne locale="bn-BD" />
+      </div>
     </>
   );
+}
 }
 
 export default App;
