@@ -1,16 +1,16 @@
-import ClassOne from "./Components/ClassOne";
-import React, { Component } from 'react';
+import Reusecomponents from "./Components/Reusecomponents";
 
-class App extends Component {
-  rander() {
+
+const App = () => {
   return (
     <>
-      <div className="bg-gray-900 text-yellow-100 h-[100vh] flex justify-center items-center">
-      <ClassOne locale="bn-BD" />
+      <div className="bg-gray-900 text-yellow-100 h-[100vh] flex flex-col gap-6 justify-center items-center ">
+    <Reusecomponents/>
+    <Reusecomponents/>
+    <Reusecomponents/>
       </div>
     </>
   );
-}
-}
+};
 
 export default App;
