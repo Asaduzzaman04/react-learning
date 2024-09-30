@@ -1,10 +1,12 @@
-import Conditional from "./learnin-topic/conditionalRendering/Conditional";
+
+
+
 
 const App = () => {
   return (
     <>
-      <div className="h-[100vh] w-[100vw] flex justify-center items-center">
-        <Conditional />
+      <div className=" h-[100vh]  flex justify-center items-center bg-slate-900 text-white text-3xl">
+          
       </div>
     </>
   );
