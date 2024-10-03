@@ -1,5 +1,5 @@
 
-import Delegation from './learnin-topic/Progegation/deligation/Delegation';
+import StateProblem from './learnin-topic/State/StateProblem';
 
 
 
@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
       <div className="h-[100vh] flex justify-center items-center bg-slate-900 text-white text-3xl ">
-     <Delegation/>
+ <StateProblem/>
       </div>
     </>
   );
