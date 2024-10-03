@@ -5,7 +5,7 @@ import FunctionRes from './FunctionRes';
 const FunctionPass = () => {
 
     const hello =(e) => {
-        confirm("hello" + "" + e)
+        console.log("hello" + "" + e)
     }
     
     return (
