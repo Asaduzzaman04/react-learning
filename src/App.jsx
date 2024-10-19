@@ -1,12 +1,12 @@
-import HooksEffect from "./learnin-topic/hooks/UseEffect/HooksEffect";
 
+import RefHooks from './learnin-topic/hooks/useRef/RefHooks';
 const App = () => {
   return (
     <>
       <div
         className={`h-[100vh] flex justify-center items-center bg-slate-900 text-white text-3xl `}
       >
-        <HooksEffect />
+      <RefHooks/>
       </div>
     </>
   );
