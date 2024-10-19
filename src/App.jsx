@@ -1,12 +1,16 @@
 
-import ForwardRaf from './learnin-topic/hooks/ForwardRap/ForwardRaf';
+import Parent from "./learnin-topic/ContextApi/Parent";
+import ChildOne from './learnin-topic/ContextApi/ChildOne';
+
 const App = () => {
   return (
     <>
       <div
         className={`h-[100vh] flex justify-center items-center bg-slate-900 text-white text-3xl `}
       >
-        <ForwardRaf/>
+      <Parent>
+        <ChildOne/>
+      </Parent>
       </div>
     </>
   );
