@@ -7,7 +7,7 @@ const RefHooks = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!userName) return;
+    if(!userName) return
     if (data.find((items) => items.names === userName.current.value)) return;
     setData((prev) => [...prev, { names: userName.current.value }]);
   };
@@ -28,5 +28,8 @@ const RefHooks = () => {
 export default RefHooks;
 
 {
-  /*In React, the `useRef` hook creates a mutable reference that persists across renders without causing re-renders when updated. It's commonly used to access DOM elements or store values that need to be retained between renders. */
+  /*
+  => In React, the `useRef` hook creates a mutable reference that persists across renders without causing re-renders when updated. It's commonly used to access DOM elements or store values that need to be retained between renders.
+  => focus() method is when rander page user cursor  focus in input section!
+  */
 }
