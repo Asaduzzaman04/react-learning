@@ -1,6 +1,5 @@
-
-import Parent from "./learnin-topic/ContextApi/Parent";
-import ChildOne from './learnin-topic/ContextApi/ChildOne';
+import Buttons from "./learnin-topic/Projects/ToggleWIthContext/buttons/Buttons";
+import ParentButton from "./learnin-topic/Projects/ToggleWIthContext/buttons/ParentButton";
 
 const App = () => {
   return (
@@ -8,9 +7,9 @@ const App = () => {
       <div
         className={`h-[100vh] flex justify-center items-center bg-slate-900 text-white text-3xl `}
       >
-      <Parent>
-        <ChildOne/>
-      </Parent>
+        <ParentButton>
+          <Buttons />
+        </ParentButton>
       </div>
     </>
   );
