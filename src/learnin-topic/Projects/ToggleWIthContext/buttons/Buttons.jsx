@@ -1,11 +1,13 @@
+import { useRef } from "react";
 import useHooks from "../Hooks/useHooks";
 import { motion } from "framer-motion";
 
 const Buttons = () => {
   const { isClick, handleClick } = useHooks();
 
+
   return (
-    <div
+    <div 
       className={`w-28 rounded-3xl h-14 flex justify-start items-center  shadow-[0px_0px_2px_#dfdfdf]  ${
         isClick ? "bg-white" : "bg-black"
       }`}

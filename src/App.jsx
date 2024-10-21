@@ -1,15 +1,14 @@
-import Buttons from "./learnin-topic/Projects/ToggleWIthContext/buttons/Buttons";
-import ParentButton from "./learnin-topic/Projects/ToggleWIthContext/buttons/ParentButton";
+
+import Reducer from './learnin-topic/hooks/ReducerHooks/Reducer';
 
 const App = () => {
+  
   return (
     <>
       <div
         className={`h-[100vh] flex justify-center items-center bg-slate-900 text-white text-3xl `}
       >
-        <ParentButton>
-          <Buttons />
-        </ParentButton>
+<Reducer/>
       </div>
     </>
   );
