@@ -14,6 +14,7 @@ const reducer = (state, action) => {
 const Reducer = () => {
   const initialVAlue = 0;
   const [count, dispatch] = useReducer(reducer, initialVAlue);
+  
 
   return (
     <div className="text-center">
@@ -28,7 +29,8 @@ const Reducer = () => {
         onClick={() => dispatch({ name: "adnan" })}
         className="border px-1 py-0.5 rounded-lg mt-4"
       >
-        decriment
+        decriment 
+      
       </button>
     </div>
   );
