@@ -1,8 +1,11 @@
 import { memo } from "react";
 
-const ChildMemo = memo(() => {
+const ChildMemo = memo(({value}) => {
+    console.log("child is rendered");
+    console.log(value);
   return (
     <div>
+      <p>hello i am asad{value.name}</p>
       <p>hello i am asad</p>
     </div>
   );
