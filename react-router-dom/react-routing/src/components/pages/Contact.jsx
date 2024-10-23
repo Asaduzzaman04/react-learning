@@ -1,4 +1,5 @@
 import { NavLink, useParams } from "react-router-dom";
+import NavigateButton from './../NavigateButton/NavigateButton';
 
 const Contact = () => {
  
@@ -14,7 +15,7 @@ const Contact = () => {
             Got a technical issue? Want to send feedback about a beta feature?
             Need details about our Business plan? Let us know.
           </p>
-          <form action="#" class="space-y-8">
+          <form onSubmit={(e) => e.preventDefault()} class="space-y-8">
             <div>
               <label
                 for="email"
@@ -67,6 +68,7 @@ const Contact = () => {
             </button>
           </form>
         </div>
+        <NavigateButton/>
       </section>
     </>
   );

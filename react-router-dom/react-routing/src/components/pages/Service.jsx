@@ -1,4 +1,5 @@
 
+import NavigateButton from './../NavigateButton/NavigateButton';
 
 const Service = () => {
     return (
@@ -54,6 +55,7 @@ const Service = () => {
           </div>
       </div>
   </div>
+  <NavigateButton/>
 </section>
         </>
     );

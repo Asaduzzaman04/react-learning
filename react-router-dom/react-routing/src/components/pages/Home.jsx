@@ -1,9 +1,14 @@
+import { Link } from "react-router-dom";
+import useImageStore from "../../Hooks/useImageStore";
+
 const Home = () => {
+
   return (
   <>
 
-
+    
     <section className="relative py-12 overflow-hidden bg-black sm:pb-16 lg:pb-20 xl:pb-24">
+
         <div className="px-4 mx-auto relativea sm:px-6 lg:px-8 max-w-7xl">
             <div className="grid items-center grid-cols-1 gap-y-12 lg:grid-cols-2 gap-x-16">
                 <div>
@@ -23,7 +28,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="sm:absolute flex sm:right-1.5 sm:inset-y-1.5 mt-4 sm:mt-0">
-                            <button  className="inline-flex items-center justify-center w-full px-5 py-5 text-sm font-semibold tracking-widest text-black uppercase transition-all duration-200 bg-white rounded-full sm:w-auto sm:py-3 hover:opacity-90">Find A Developer</button>
+                            <Link  className="inline-flex items-center justify-center w-full px-5 py-5 text-sm font-semibold tracking-widest text-black uppercase transition-all duration-200 bg-white rounded-full sm:w-auto sm:py-3 hover:opacity-90">Find A Developer</Link>
                         </div>
                     </form>
 
