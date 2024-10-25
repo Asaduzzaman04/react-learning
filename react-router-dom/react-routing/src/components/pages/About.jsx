@@ -1,5 +1,6 @@
 import NavigateButton from "../NavigateButton/NavigateButton";
 
+
 const About = () => {
   return (
     <>
@@ -112,6 +113,7 @@ const About = () => {
           </div>
         </div>
       <NavigateButton/>
+    
       </section>
     </>
   );

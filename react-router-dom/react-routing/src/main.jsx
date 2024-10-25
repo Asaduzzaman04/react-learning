@@ -5,8 +5,6 @@ import Routes from './components/Routes/Routes';
 import './css/input.css'
 
 
-
-
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={Routes}/>
