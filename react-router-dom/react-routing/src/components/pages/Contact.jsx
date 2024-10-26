@@ -1,9 +1,18 @@
-import { NavLink, useParams } from "react-router-dom";
-import NavigateButton from './../NavigateButton/NavigateButton';
+import { Form } from "react-router-dom";
+import NavigateButton from "./../NavigateButton/NavigateButton";
+
+export const handleFromSubmit = async ({ request }) => {
+  //From Data is an  async function to submit the form data to the server
+  try {
+    const response = await request.fromData();
+    const result = Object.fromEntries(response);  
+    console.log(result);
+  } catch (error) {
+    console.log(error);
+  }
+};
 
 const Contact = () => {
- 
-
   return (
     <>
       <section className="bg-white dark:bg-gray-900">
@@ -15,7 +24,7 @@ const Contact = () => {
             Got a technical issue? Want to send feedback about a beta feature?
             Need details about our Business plan? Let us know.
           </p>
-          <form onSubmit={(e) => e.preventDefault()} className="space-y-8">
+          <Form method="POST" action="/contact" className="space-y-8">
             <div>
               <label
                 htmlFor="email"
@@ -29,6 +38,7 @@ const Contact = () => {
                 className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                 placeholder="name@flowbite.com"
                 required
+                name="email"
               />
             </div>
             <div>
@@ -44,6 +54,7 @@ const Contact = () => {
                 className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                 placeholder="Let us know how we can help you"
                 required
+                name="text"
               />
             </div>
             <div className="sm:col-span-2">
@@ -54,6 +65,7 @@ const Contact = () => {
                 Your message
               </label>
               <textarea
+              name="text"
                 id="message"
                 rows="6"
                 className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
@@ -66,9 +78,9 @@ const Contact = () => {
             >
               Send message
             </button>
-          </form>
+          </Form> 
         </div>
-        <NavigateButton/>
+        <NavigateButton />
       </section>
     </>
   );

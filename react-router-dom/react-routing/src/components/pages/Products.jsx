@@ -1,7 +1,4 @@
-import {
-  NavLink,
-  useLoaderData,
-} from "react-router-dom";
+import { NavLink, useLoaderData } from "react-router-dom";
 
 const Products = () => {
   const data = useLoaderData(); // useLoaderData is a build in this hook for fetch data hook without useEffect.
