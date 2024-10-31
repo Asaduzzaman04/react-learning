@@ -22,8 +22,6 @@ const Drivestate = () => {
     const round = Math.round(items);
     return round;
   }, 0);
-  
- 
   return (<>
     <div>
          <p className="font-bold capitalize">total average price in per products is {res} </p>

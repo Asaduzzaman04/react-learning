@@ -5,13 +5,13 @@ const Todo = () => {
   const [value, setValue] = useState("");
   const [list, setList] = useState([]);
   // const [date, setDate] = useState();
-  const [check,setCheck] = useState(false)
+  const [check, setCheck] = useState(false);
 
   const handleList = () => {
     if (!value) return;
-    if (list.includes(value)){
-      return setValue("")
-    };
+    if (list.includes(value)) {
+      return setValue("");
+    }
     setList((prevTask) => [...prevTask, value]);
     setValue("");
   };
@@ -34,13 +34,10 @@ const Todo = () => {
   //   return () => clearInterval(timerel)
   // },[])
 
-  const handelDeleteList = (listTask) =>{
-
-    const deleteTask = list.filter((el) => el !== listTask)
-    setList(deleteTask)
-   
-  }
-  
+  const handelDeleteList = (listTask) => {
+    const deleteTask = list.filter((el) => el !== listTask);
+    setList(deleteTask);
+  };
 
   return (
     <>
@@ -69,9 +66,16 @@ const Todo = () => {
               </button>
             </div>
           </form>
-          {
-            list.map((e, i) => <List key={i} value={e} list={list}  handelDeleteList={handelDeleteList} check={check} setCheck={setCheck}/>)
-          }
+          {list.map((e, i) => (
+            <List
+              key={i}
+              value={e}
+              list={list}
+              handelDeleteList={handelDeleteList}
+              check={check}
+              setCheck={setCheck}
+            />
+          ))}
         </section>
         <button
           className={` capitalize text-lg px-2 py-1 rounded-md bg-red-500 font-bold`}

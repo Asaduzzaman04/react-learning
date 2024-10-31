@@ -5,8 +5,8 @@ export const handleFromSubmit = async ({ request }) => {
   //From Data is an  async function to submit the form data to the server
   try {
     const response = await request.fromData();
-    const result = Object.fromEntries(response);  
-    console.log(result);
+    const result = Object.fromEntries(response); 
+    console.log(result); 
   } catch (error) {
     console.log(error);
   }

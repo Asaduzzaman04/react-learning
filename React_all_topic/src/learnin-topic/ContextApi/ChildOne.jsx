@@ -1,20 +1,12 @@
-
-import ChildTwo from './ChildTwo';
-
+import ChildTwo from "./ChildTwo";
 
 const ChildOne = () => {
-  
-    return (
-     
-         <>
-          
-            <p>hello i am child one</p>
-                <ChildTwo/>
-           
-         </>
-    
-     
-    );
+  return (
+    <>
+      <p>hello i am child one</p>
+      <ChildTwo />
+    </>
+  );
 };
 
 export default ChildOne;
