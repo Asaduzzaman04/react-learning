@@ -6,7 +6,7 @@ const useOldFetch = () => {
 
   const handlegetdata = async () => {
     const data = await getAxios();
-    setUserData(data);
+    data.status === 200 ? setUserData(data.data) : [];
   };
 
   useEffect(() => {

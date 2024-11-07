@@ -6,7 +6,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 const App = () => {
   const queryClient = new QueryClient();
 
-
   return (
     <>
       <main className="bg-[#0a0a0a] text-white">

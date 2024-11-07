@@ -1,11 +1,9 @@
-
-
 const Home = () => {
-    return (
-        <div className="h-lvh flex flex-col justify-center items-center">
-            i am Home
-        </div>
-    );
+  return (
+    <div className="h-lvh text-5xl capitalize flex flex-col justify-center items-center">
+      i am Home page
+    </div>
+  );
 };
 
 export default Home;

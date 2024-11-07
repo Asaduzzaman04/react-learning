@@ -5,6 +5,6 @@ const data = axios.create({
 
 })
 
-export const getAxios =  () =>{
+export const getAxios =   () =>{
     return data.get('/posts') //get all posts
 }
