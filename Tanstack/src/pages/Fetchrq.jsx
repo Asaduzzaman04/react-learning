@@ -19,7 +19,14 @@ const Fetchrq = () => {
 
   const { data, error, isLoading } = useQuery({
     queryKey: ["data"], //in tanstack  querykey works alternatively usestate;
-    queryFn: handleTenData, //in tanstack queryfn works alternatively useEffect
+
+    queryFn: handleTenData, //in tanstack queryfn works alternatively useEffect;
+
+    staleTime:10000, //In React Query, stale time defines how long fetched data remains fresh before being marked as stale and needing a refetch;
+
+    gcTime :50000 , //In React Query, GC Time (controlled by cacheTime) specifies how long inactive query data stays cached before being garbage collected;
+
+
   });
 
   return (
