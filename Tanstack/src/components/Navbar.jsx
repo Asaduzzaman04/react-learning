@@ -26,6 +26,7 @@ const Navbar = () => {
             <NavLink to="/">home</NavLink>
             <NavLink to="/fetchold">Fetch old</NavLink>
             <NavLink to="/fetchrq">Fetch RQ</NavLink>
+            <NavLink to="/pagination">pagination</NavLink>
       </ul>
     </div>
   </div>

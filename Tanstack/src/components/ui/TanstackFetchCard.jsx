@@ -12,7 +12,7 @@ const TanstackFetchCard = ({ data }) => {
             <h2 className="capitalize "> title: {data.title}</h2>
             <p>{data.body}</p>
             <button>
-            <NavLink to={`/fetchrq/${data.title}`}  >see details</NavLink>
+            <NavLink to={`/fetchrq/${data.id}`}  >see details</NavLink>
             </button>
           </div>
         </div>
