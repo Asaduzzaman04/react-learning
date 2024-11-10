@@ -1,3 +1,6 @@
+
+import { NavLink } from 'react-router-dom';
+
 const TanstackFetchCard = ({ data }) => {
 
   return (
@@ -8,6 +11,9 @@ const TanstackFetchCard = ({ data }) => {
           <div className="flex flex-col gap-2">
             <h2 className="capitalize "> title: {data.title}</h2>
             <p>{data.body}</p>
+            <button>
+            <NavLink to={`/fetchrq/${data.title}`}  >see details</NavLink>
+            </button>
           </div>
         </div>
       </li>

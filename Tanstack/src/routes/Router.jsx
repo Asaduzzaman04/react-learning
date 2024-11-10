@@ -3,6 +3,7 @@ import App from "../App";
 import Home from "./../pages/Home";
 import Fetchold from "./../pages/Fetchold";
 import Fetchrq from "./../pages/Fetchrq";
+import Detailscard from './../components/ui/Detailscard';
 
 const Router = createBrowserRouter([
   {
@@ -20,8 +21,12 @@ const Router = createBrowserRouter([
       },
       {
         element: <Fetchrq />,
-        path: "/fetchrq",
+        path: "/fetchrq/",
       },
+      {
+        element: <Detailscard />,
+        path:"/fetchrq/:title",
+      }
     ],
   },
 ]);
