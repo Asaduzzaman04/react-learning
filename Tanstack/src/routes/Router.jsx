@@ -3,8 +3,9 @@ import App from "../App";
 import Home from "./../pages/Home";
 import Fetchold from "./../pages/Fetchold";
 import Fetchrq from "./../pages/Fetchrq";
-import Detailscard from './../components/ui/Detailscard';
-import Pagination from './../pages/Pagination';
+import Detailscard from "./../components/ui/Detailscard";
+import Pagination from "./../pages/Pagination";
+import DeletePost from "../pages/DeletePost";
 
 const Router = createBrowserRouter([
   {
@@ -26,10 +27,14 @@ const Router = createBrowserRouter([
       },
       {
         element: <Detailscard />,
-        path:"/fetchrq/:id",
+        path: "/fetchrq/:id",
+      },
+      {
+        element: <Pagination />,
+        path: "/pagination",
       },{
-        element:<Pagination/>,
-        path:"/pagination",
+        element: <DeletePost/>,
+        path : "deletePost",
       }
     ],
   },

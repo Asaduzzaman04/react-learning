@@ -3,7 +3,7 @@ const PaginationCard = ({data}) => {
     return (
         <>
             
-            <li className="shrink-1 w-full overflow-hidden transition-all duration-100 ease-linear hover:shadow-[0_20px_50px_rgba(255,_255,_255,_0.7)]  px-3 py-2 rounded-lg bg-blue-300 text-black h-full ">
+            <li className="shrink-1 w-full h-full overflow-hidden transition-all duration-100 ease-linear hover:shadow-[0_20px_50px_rgba(255,_255,_255,_0.7)]  px-3 py-2 rounded-lg bg-blue-300 text-black ">
         <div className="flex flex-col gap-5 font-semibold ">
           <p>{data.id}</p>
           <div className="flex flex-col gap-2">

@@ -27,7 +27,7 @@ const DetailsCard = () => {
   
 
   // Loading and error states
-  if (isLoading) return <p>Loading...</p>;
+  if (isLoading) return <p className="text-5xl font-bold w-full h-lvh flex justify-center items-center">Loading...</p>;
   if (isError) return <p>Error fetching data.</p>;
 
   return (

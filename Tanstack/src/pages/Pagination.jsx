@@ -51,8 +51,7 @@ const Pagination = () => {
     );
   }
 
-  console.log(data);
-  console.log(pageNumber);
+
   return (
     <>
       <main className="flex w-full h-lvh flex-col justify-center items-center">
