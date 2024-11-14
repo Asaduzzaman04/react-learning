@@ -11,7 +11,7 @@ const App = () => {
     <>
       <main className="bg-[#0a0a0a] text-white">
         <QueryClientProvider client={queryClient}>
-          <ReactQueryDevtools initialIsOpen={false} />
+          <ReactQueryDevtools initialIsOpen={false} buttonPosition={"bottom-left"} />
           <Navbar />
           <Outlet />
           <Footer />

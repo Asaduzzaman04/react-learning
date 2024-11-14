@@ -28,6 +28,7 @@ const Navbar = () => {
             <NavLink to="/fetchrq">Fetch RQ</NavLink>
             <NavLink to="/pagination">pagination</NavLink>
             <NavLink to="/deletePost">DeletePost</NavLink>
+            <NavLink to="/infiniteScroll">infiniteScroll</NavLink>
       </ul>
     </div>
   </div>

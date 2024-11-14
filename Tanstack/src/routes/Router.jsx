@@ -6,10 +6,11 @@ import Fetchrq from "./../pages/Fetchrq";
 import Detailscard from "./../components/ui/Detailscard";
 import Pagination from "./../pages/Pagination";
 import DeletePost from "../pages/DeletePost";
+import InfiniteScroll from './../pages/InfiniteScroll';
 
 const Router = createBrowserRouter([
   {
-    element: <App />,
+    element: <App/>,
     path: "/",
     children: [
       // Add routes here
@@ -35,6 +36,10 @@ const Router = createBrowserRouter([
       },{
         element: <DeletePost/>,
         path : "deletePost",
+      },{
+        element: <InfiniteScroll/>,
+        path: "/infiniteScroll",
+
       }
     ],
   },

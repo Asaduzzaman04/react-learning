@@ -1,16 +1,18 @@
-import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { keepPreviousData, useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { deleteItemAxios, getAxios } from './../api/OlddataFetch';
 
 const DeletePost = () => {
 
-    const {data,} =  useQuery({
+    const {data} =  useQuery({
         queryKey: ['deletePost',],
         queryFn:async ()  => {
          const response = await   getAxios();
          if(response.status === 200) {
              return response.data;
          }
-        }
+        },
+        staleTime : 60 * 1000 * 60,
+        placeholderData: keepPreviousData,
     })
 
 

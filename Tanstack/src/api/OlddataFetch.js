@@ -24,3 +24,13 @@ export const paginationData = (page) => {
 export const deleteItemAxios = (id) => {
   return data.delete(`/posts/${id}`);
 };
+
+// infinite scrolling
+export const  scroll = axios.create({
+  baseURL: "https://api.github.com",
+})
+
+export const fetchUsersScroll = async ({pageParams = 1}) => {
+  const response = await scroll.get(`/users?per_page=5&page=${pageParams}`);
+  return response.data;
+};

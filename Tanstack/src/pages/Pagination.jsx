@@ -35,6 +35,7 @@ const Pagination = () => {
     staleTime: 60 * 1000 * 100,
     gcTime: 60 * 1000 * 100,
   });
+
   if (isLoading) {
     return (
       <div className="w-full h-lvh text-7xl font-bold flex justify-center items-center">
